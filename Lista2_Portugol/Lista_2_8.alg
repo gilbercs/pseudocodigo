@@ -1,0 +1,21 @@
+algoritmo "lista_2_8"
+var
+n1,n2,n3,x: inteiro
+inicio
+escreva("Digite o primeiro número:")
+leia(n1)
+escreva("Digite o segundo número:")
+leia(n2)
+escreva("Dgite o terceiro número:")
+leia(n3)
+se (n1>n2) entao
+x <-n1
+senao
+x <-n2
+fimse
+se (x>n3)entao
+escreval(" O maior número é: ", x)
+senao
+escreval(" O maior número é: ", n3)
+fimse
+fimalgoritmo

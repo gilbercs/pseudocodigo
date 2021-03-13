@@ -1,0 +1,39 @@
+algoritmo "Lista4_h"
+// criar um algoritmo que apresente as seguintes informaçõe.
+//O peso medio e a idade media de cada um dos times
+//O peso médio e a idade média de todos os participantes
+var
+pais, time: literal
+peso, pesomediat, idmediat, pesomediap, idmediap, ip: real
+idade, i, id, x, totalpeso, totalidade: inteiro
+inicio
+// Seção de Comandos
+x <- 0
+i <- 0
+totalidade <- 0
+totalpeso <- 0
+repita
+x <- x + 1
+escreval(x," - Informe o nome de seu pais:")
+leia(pais)
+ip <- 0
+id <- 0
+para i de 1 ate 2 passo 1 faca
+escreva("Participante ",i,":")
+escreva("Informe o peso: ")
+leia(peso)
+se(peso > 0 )entao
+escreva("Informe a idade: ")
+leia(idade)
+ip <- ip + peso
+id <- id + idade
+senao
+escreval("erro no peso")
+fimse
+pesomediat <- ip /2
+idmediat <- id /2
+fimpara
+escreval("media peso",pesomediat)
+escreval("media idade",idmediat)
+ate(x >=30)
+fimalgoritmo
