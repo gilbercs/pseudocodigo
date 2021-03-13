@@ -1,0 +1,28 @@
+algoritmo "quest_9"
+// Função :
+// Autor :
+// Data : 10/03/2016
+// Seção de Declarações 
+var
+// Faça um algoritmo que leia um vetor de 500 posições de numeros
+//inteiros e divida todos seus elementos pelo maior valor do vetor.
+//Mostre o vetor apos o calculos.
+num: vetor[1..5] de inteiro
+d: vetor[1..5] de real
+i,maior: inteiro
+inicio
+para i de 1 ate 5 passo 1 faca
+escreva("Digite um valor: ")
+leia(num[i])
+maior <- num[1]
+se(num[i]>maior)entao
+maior <- num[i]
+fimse
+fimpara
+escreval("vetor divido pelo maior vetor :")
+para i de 1 ate 5 passo 1 faca
+d[i] <- num[i] / maior
+escreval(num[i],"/",maior,"=",d[i])
+fimpara
+
+fimalgoritmo
