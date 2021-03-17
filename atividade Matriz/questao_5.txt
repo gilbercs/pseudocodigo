@@ -1,0 +1,55 @@
+algoritmo "questao"
+// Função :
+// Autor :
+// Data : 19/03/2016
+// Seção de Declarações 
+var
+m: vetor[1..5,1..5] de inteiro
+lin,col: inteiro
+soma2,soma4,diagonal,soma: inteiro
+inicio
+soma <- 0
+soma2 <- 0
+soma4 <- 0
+diagonal <- 0
+escreval("Informe a Matriz M(5,5)")
+para col de 1 ate 5 passo 1 faca
+para lin de 1 ate 5 passo 1 faca
+leia(m[lin,col])
+fimpara
+fimpara
+escreval("Informe a Matriz M(5,5)")
+para col de 1 ate 5 passo 1 faca
+para lin de 1 ate 5 passo 1 faca
+se( lin = 2 )entao
+soma2 <- soma2 + m[2,lin]
+fimse
+se( lin = 4)entao
+soma4 <- soma4 + m[4,lin]
+fimse
+se(lin = col)entao
+diagonal <- diagonal + m[col,lin]
+fimse
+soma <- soma + m[col,lin]
+fimpara
+fimpara
+escreva("A soma da linha 4: ")
+escreva(soma4)
+escreval()
+escreva("A soma da linha 2: ")
+escreva(soma2)
+escreval()
+escreva("A soma da Diagonal principal: ")
+escreva(diagonal)
+escreval()
+escreva("A soma da matiz é: ")
+escreva(soma)
+escreval()
+escreval("A Matriz M(5,5) é: ")
+para col de 1 ate 5 passo 1 faca
+para lin de 1 ate 5 passo 1 faca
+escreva(m[lin,col])
+fimpara
+escreval
+fimpara
+fimalgoritmo

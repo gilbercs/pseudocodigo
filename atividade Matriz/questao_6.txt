@@ -1,0 +1,37 @@
+algoritmo "questao"
+// Função :
+// Autor :
+// Data : 19/03/2016
+// Seção de Declarações 
+var
+m: vetor[1..10,1..10] de inteiro
+lin,col, i,a, b,c: inteiro
+inicio
+escreval("Prencha a Matriz com nº inteiro:")
+para lin de 1 ate 10 passo 1 faca
+para col de 1 ate 10 passo 1 faca
+escreva("[",lin,",",col,"]: ")
+leia(m[lin,col])
+fimpara
+fimpara
+para lin de 1 ate 3 passo 1 faca
+para col de 1 ate 3 passo 1 faca
+a <- m[2,lin]
+m[2,lin] <- m[8,lin]
+m[8,lin] <- a //Trocar lin 2 po lin 8
+b <- m[lin,4]
+m[lin,4] <- m[lin,10]//trocar col 4 a col 10
+m[lin,10] <- b
+c <- m[5,lin]
+m[5,lin] <- m[lin,10]
+m[lin,10] <- m[5,lin]
+fimpara
+fimpara
+escreval("A matriz M(10,10)")
+para lin de 1 ate 10 passo 1 faca
+para col de 1 ate 10 passo 1 faca
+escreva("[",lin,",",col,"]: ",m[lin,col])
+fimpara
+escreval()
+fimpara
+fimalgoritmo

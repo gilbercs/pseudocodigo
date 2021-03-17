@@ -1,0 +1,50 @@
+algoritmo "questao"
+// Função :
+// Autor :
+// Data : 10/03/2016
+// Seção de Declarações 
+var
+x,y: vetor[1..10] de inteiro
+z: vetor [1..20] de inteiro
+i,j,cont,uniao: inteiro
+inicio
+para i de 1 ate 10 passo 1 faca
+escreva("Vetor X [",i,"]: ")
+leia(x[i])
+fimpara
+para i de 1 ate 10 passo 1 faca
+escreva("Vetor Y [",i,"]: ")
+leia(y[i])
+fimpara
+escreval("A união de X com Y é: ")
+escreva("{")
+para i de 1 ate 4 passo 1 faca
+se(x[i]<>y[i])entao
+z[i]<-x[i]
+z[i+4]<-y[i]
+fimse
+se(x[i]=y[i])entao
+z[i]<-x[i]
+fimse
+fimpara
+para i de 1 ate 8 passo 1 faca
+escreva(z[i])
+fimpara
+escreva("}")
+escreval()
+escreval("A intersecção entre X e Y é: ")
+escreva("{")
+para j de 1 ate 4 passo 1 faca
+para i de 1 ate 4 passo 1 faca
+se(x[i]=y[j])entao
+cont <- cont + 1;
+z[i] <- x[i]
+fimse
+fimpara
+fimpara
+para i de 1 ate cont passo 1 faca
+escreva(z[i])
+fimpara
+escreva("}")
+
+fimalgoritmo
