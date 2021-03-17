@@ -1,0 +1,16 @@
+8) Entrar com vários números, se o número digitado for maior ou igual a 30. Então imprimir a metade
+do número.
+algoritmo "questao"
+var
+num, x: real
+inicio
+enquanto num < 30 faca
+escreva("Digite um número:")
+leia(num)
+fimenquanto
+se(num>=30) entao
+x<-num/2
+escreval("O maior é: ",num)
+escreva("A metade do numero é:",x)
+fimse
+fimalgoritmo

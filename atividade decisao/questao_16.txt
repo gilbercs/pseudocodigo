@@ -1,0 +1,24 @@
+16) Elaborar um algoritmo com dados de entrada: altura, sexo, peso de uma pessoa e
+calcule caso: M= (72.7* h)- 38, F= (62.1* h) - 44.7 .Sendo que "h" equivale a altura de
+uma pessoa.
+algoritmo "questao"
+var
+h, imc: real
+sexo: caracter
+inicio
+escreva("Informe a altura")
+leia(h)
+escreva("Informe o sexo (F/M)")
+leia(sexo)
+se(sexo="m")entao
+imc <- (72.7* h) - 58
+escreva("Senhor sua massa é: ",imc)
+senao
+se(sexo ="f")entao
+imc <- (62.1*h) - 44.7
+escreva("Senhora sua massa é: ", imc)
+senao
+escreva("Informe (F/M))
+fimse
+fimse
+fimalgoritmo

@@ -1,0 +1,18 @@
+6) Entrar com 2 números inteiros, efetuar a soma, se a somatória for maior que 30 emitir uma
+mensagens "maior" caso contrário emitir a mensagem "menor".
+algoritmo "questao"
+var
+n1,n2,soma: inteiro
+inicio
+// Seção de Comandos 
+escreval("Digite um Numero:")
+leia(n1)
+escreval("Digite outro numero:")
+leia(n2)
+soma<-(n1+n2)
+se (soma>30) entao
+escreval(" Maior!")
+senao
+escreva(" Menor!")
+fimse
+fimalgoritmo

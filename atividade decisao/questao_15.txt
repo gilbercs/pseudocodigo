@@ -1,0 +1,20 @@
+15) Elabore um algoritmo que efetue a leitura do nome e do sexo de uma pessoa.
+Se for masculino escrever o "Senhor?" se não "Senhora ?".
+algoritmo "questao"
+var
+nome, sexo: literal
+inicio
+escreva ("Informe seu nome: ")
+leia(nome)
+escreva("Informe o sexo (F/M)")
+leia(sexo)
+se((sexo= "m") ou (sexo="M"))entao
+escreva("Senhor ",nome)
+senao
+se((sexo = "f") ou (sexo= "F"))entao
+escreva("Senhora ",nome)
+senao
+escreva("Informe (F/M)")
+fimse
+fimse
+fimalgoritmo

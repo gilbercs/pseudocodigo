@@ -1,0 +1,15 @@
+10) Entrar com dois números e imprimi-los em ordem decrescente (Suponha números diferentes).
+algoritmo "questao"
+var
+n1,n2: inteiro
+inicio
+escreva("Digite o primeiro número:")
+leia(n1)
+escreva("Digite o segundo número:")
+leia(n2)
+se (n1>n2) entao
+escreva(" ",n2,n1)
+senao
+escreva(" ",n1,n2)
+fimse
+fimalgoritmo
